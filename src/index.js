@@ -116,7 +116,7 @@ const { GH_TOKEN, GIST_ID, USERNAME, DAYS } = process.env;
     await api.fetch(`/gists/${GIST_ID}`, "PATCH", {
       files: {
         [filename]: {
-          filename: `💻 Recent coding in languages`,
+          filename: `lines`,
           content,
         },
       },
